@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IT=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">    <!--Link to the style.css file-->
+    <script src="https://kit.fontawesome.com/3b2d7757ec.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo">Lynn Nguyen</h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Projects archive</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>My Portfolio</p>
+            <h1>Hi, I'm a <span>developer</span> and <span>data scientist</span> <br> based in Melbourne, Australia</h1>
+        </div>
+    </div>
+</div>
+<!--------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/notalkingcat_png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <br>
+                <p>  I currently am a first year undergraduate doing Computer Science at Swinburne University of Technology. I have a strong passion for Maths and am also a Machine Learning enthusiasts. My ultimate goal is to    </p>
+                <br>
+                <p>This personal portolio showcases all the work that I've done and the work that I'm working on outside of school. All of my projecst will also be uploaded on my personal github account, you can check it out in the Contacts section. Make sure to leave a follow and a like. Cheers!
+                </p>
+                <br>
+                <p> * Please note that the portfolio is going to be updated frequently *</p>
+
+                <div class="tab-titles">    
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('Education/Certificates')">Education/Certificates</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Data Science</span><br>Data Analysis/Visualization</li>
+                        <li><span> Initiator</span><br>Sova-Breach-Kay/O</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Projects">
+                    <ul>
+                        <li><span>Machine Learning</span><br>Model prediction for Heart Diseases</li>
+                        <li><span>Web development</span><br>Personal Portfolio</li>
+                        <li><span>Web App</span><br>E-commerce Website</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education/Certificates">
+                    <ul>
+                        <li><span>Swinburne University of Technology</span><br>Bachelor of Computer Science</li>
+                        <li><span>Python</span><br>ZTM Python Full Course</li>
+                        <li><span>N/A</span><br>Data Analysis/Visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects Archive</h1>
+        <div class="projects-list">
+            <div>   
+                <i class="fa-solid fa-database"></i>
+                <h2>Machine Learning </h2>
+                <br>
+                <p> This project utilises the priciples of Machine Learning, Data Science to create a model that provides diagnosis for different cardio vascular disease; which is one of the prevalent causes of death in Vietnam currently.</p>
+                <a href="#">Learn more at</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <br>
+                <p>This is one of my first project in undegrad created using HTML, CSS and JS. This personal portfolio stores all the required information that I would need to display, showcase at a particular interview in the future: Social Media, GitHub page, etc.</p>
+                <a href="#">Learn more at</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+                <h2>E-commerce Web</h2>
+                <br>
+                <p>TThis E-commerece Website sells organic products: deli and vegetables. PHP and MySQL were implemented to create a database, log-in system where users can register their account and start shopping. </p>
+                <a href="#">Learn more at</a>
+            </div>
+            
+            
+
+        </div>
+    </div>
+</div>
+<!---------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Services</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Machine Learning</h3>
+                    <p>Deploy Machine Learning models to conquer real-worled problems</p>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>Be able to construct, create and customize your own e-commerce website through a wide range of programming languages</p>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Show the world who you are</p>
+                    <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a> 
+    </div>
+</div>
+<!---------------contact------------->
+<!---------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Hit me up Baby</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> lynnguyen1311@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> 0931311528</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ngoc-linh-nguyen-1105a5224/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/phuonglinhnbn"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/ling.ling.nguyen/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="images\CV_Nguyen_Ngoc_Phuong_Linh.docx" class="btn btn2">Download CV</a>     
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit or Die</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by © <i class="fa-solid fa-heart"></i> Ling Ling</p>
+
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
